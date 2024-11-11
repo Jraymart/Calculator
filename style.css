@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background-color: #5d4e605e;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+header {
+    background-color: #373D20;
+    padding: 25px;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.calculator {
+    background-color: #373D20;
+    width: 365px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.screen {
+    background-color: #BCBD8B;
+    border-radius: 15px;
+    padding: 10px;
+    height: 10vh;
+    box-shadow: inset 2px 2px 2px black;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#result-text {
+    align-self: flex-end;
+    font-size: 48px;
+}
+
+.function {
+    background-color: #C44900;
+    box-shadow: 2px 2px 2px #B84300;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button:active {
+    background-color: #BCBD8B;
+}
+
+.function:active {
+    background-color: #F55A00;
+}
+
+button {
+    border-radius: 50%;
+    font-size: 36px;
+    padding: 10px;
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    margin: 15px 4px 4px 4px;
+    border: none;
+    background-color: #717744;
+    box-shadow: 2px 2px 2px #62683C;
+}
+
+#clear {
+    background-color: #861109;
+    box-shadow: 2px 2px 2px #99130A;
+}
+
+#clear:active {
+    background-color: #99130A;
+}
+
+#zero {
+    width: 140px;
+    border-radius: 50px;
+}
+@media (min-width: 768px) {
+.calculator {
+width: 500px; /* Larger width for desktop */
+padding: 40px; /* More padding */
+}
+
+.screen {
+height: 10vh; /* Increase screen height */
+}
+
+#result-text {
+font-size: 64px; /* Increase font size for desktop */
+}
+
+button {
+font-size: 50px; /* Larger button font size for desktop */
+height: 80px;
+width: 80px;
+margin: 15px 4px 4px 4px; /* Adjust spacing */
+}
+
+#zero {
+width: 190px; /* Wider zero button for desktop */
+}
+}
